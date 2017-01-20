@@ -113,4 +113,11 @@ public class Point {
             default: System.out.println("Incorrect parameter axis!");
         }
     }
+    
+    public Point clonePoint() {
+        Point newPoint = new Point(this.x, this.y);
+        newPoint.setName(this.name);
+        return newPoint;
+    }
+    
 }
